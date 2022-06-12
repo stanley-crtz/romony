@@ -16,13 +16,14 @@ const Footer = () => {
                     <div className="flex gap-x-4 pl-4">
                         <a href="https://www.facebook.com/Romony-101749025027405" target="_blank" rel="noreferrer">{MaterialIcons.Facebook}</a>
                         <a href="https://www.instagram.com/romony.sv/" target="_blank" rel="noreferrer">{MaterialIcons.Instagram}</a>
+                        <a href="https://api.whatsapp.com/send?phone=78719073" target="_blank" rel="noreferrer">{MaterialIcons.Whatsapp}</a>
                     </div>
                 </div>
                 <div className="flex flex-col gap-y-2 justify-start">
                     <p className="font-bold">Informacion</p>
                     <ul className="flex flex-col gap-y-3 pl-4">
                         <li>¿Quienes somos?</li>
-                        <li><a href={"#"}>Terminos y condiciones</a></li>
+                        <li><a href="/derechos_romony.pdf" download >Terminos y condiciones</a></li>
                     </ul>
                 </div>
                 <form onSubmit={handleSubmit} className="flex flex-col gap-y-2 justify-start">
