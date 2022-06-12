@@ -1,0 +1,3 @@
+// User
+export const SET_SHOPPING_CART = 'SET_SHOPPING_CART'
+export const ADD_SHOPPING_CART = 'ADD_SHOPPING_CART'

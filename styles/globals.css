@@ -1,16 +1,48 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --background: #fff;
+    --color: #000;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+
+.containerCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+    grid-auto-rows: max-content;
+    gap: 1rem;
+}
+
+.containerCards>*:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.hoverImage {
+    background-color: red;
+}
+
+.hoverImage:hover {
+    cursor: pointer;
+    transform: scale(1.8);
+    transition: 1s;
+}
+
+.inputForm {
+    border: 1px solid #918e8e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.formCheckout {
+    height: 28rem;
 }
